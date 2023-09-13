@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="N0832Q" name="Mute" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="0" jucerFormatVersion="1">
   <MAINGROUP id="YRmhS8" name="Mute">
     <GROUP id="{8D95AE49-5FB4-B0C5-0C98-0661C42AC456}" name="Source">
       <FILE id="ehNYdx" name="PluginProcessor.cpp" compile="1" resource="0"
