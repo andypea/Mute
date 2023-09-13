@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="N0832Q" name="mute" projectType="audioplug" useAppConfig="0"
+<JUCERPROJECT id="N0832Q" name="Mute" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
-  <MAINGROUP id="YRmhS8" name="mute">
+  <MAINGROUP id="YRmhS8" name="Mute">
     <GROUP id="{8D95AE49-5FB4-B0C5-0C98-0661C42AC456}" name="Source">
       <FILE id="ehNYdx" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
@@ -32,8 +32,8 @@
   <EXPORTFORMATS>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" targetName="mute"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="mute"/>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Mute"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Mute"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_audio_basics" path="../../../../usr/share/juce/modules"/>

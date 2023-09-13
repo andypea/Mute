@@ -112,6 +112,7 @@ bool MuteAudioProcessor::isBusesLayoutSupported(
 
 void MuteAudioProcessor::processBlock(juce::AudioBuffer<float> &buffer,
                                       juce::MidiBuffer &midiMessages) {
+
   juce::ScopedNoDenormals noDenormals;
   auto totalNumInputChannels = getTotalNumInputChannels();
   auto totalNumOutputChannels = getTotalNumOutputChannels();
@@ -135,6 +136,9 @@ void MuteAudioProcessor::processBlock(juce::AudioBuffer<float> &buffer,
     auto *channelData = buffer.getWritePointer(channel);
 
     // ..do something to the data...
+    if (muted) {
+      buffer.clear(channel, buffer.getNumSamples());
+    }
   }
 }
 

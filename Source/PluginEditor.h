@@ -14,7 +14,8 @@
 //==============================================================================
 /**
  */
-class MuteAudioProcessorEditor : public juce::AudioProcessorEditor {
+class MuteAudioProcessorEditor : public juce::AudioProcessorEditor,
+                                 private juce::Button::Listener {
 public:
   MuteAudioProcessorEditor(MuteAudioProcessor &);
   ~MuteAudioProcessorEditor() override;
@@ -27,6 +28,11 @@ private:
   // This reference is provided as a quick way for your editor to
   // access the processor object that created it.
   MuteAudioProcessor &audioProcessor;
+
+  juce::ToggleButton muteButton;
+
+  void buttonClicked(juce::Button *button) override;
+  void buttonStateChanged(juce::Button *button) override;
 
   JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MuteAudioProcessorEditor)
 };
