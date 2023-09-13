@@ -8,26 +8,25 @@
 
 #pragma once
 
-#include <JuceHeader.h>
 #include "PluginProcessor.h"
+#include <JuceHeader.h>
 
 //==============================================================================
 /**
-*/
-class MuteAudioProcessorEditor  : public juce::AudioProcessorEditor
-{
+ */
+class MuteAudioProcessorEditor : public juce::AudioProcessorEditor {
 public:
-    MuteAudioProcessorEditor (MuteAudioProcessor&);
-    ~MuteAudioProcessorEditor() override;
+  MuteAudioProcessorEditor(MuteAudioProcessor &);
+  ~MuteAudioProcessorEditor() override;
 
-    //==============================================================================
-    void paint (juce::Graphics&) override;
-    void resized() override;
+  //==============================================================================
+  void paint(juce::Graphics &) override;
+  void resized() override;
 
 private:
-    // This reference is provided as a quick way for your editor to
-    // access the processor object that created it.
-    MuteAudioProcessor& audioProcessor;
+  // This reference is provided as a quick way for your editor to
+  // access the processor object that created it.
+  MuteAudioProcessor &audioProcessor;
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MuteAudioProcessorEditor)
+  JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MuteAudioProcessorEditor)
 };
